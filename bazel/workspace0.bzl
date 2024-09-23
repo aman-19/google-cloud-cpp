@@ -82,9 +82,9 @@ def gl_cpp_workspace0(name = None):
         http_archive,
         name = "build_bazel_rules_apple",
         urls = [
-            "https://github.com/bazelbuild/rules_apple/releases/download/3.8.0/rules_apple.3.8.0.tar.gz",
+            "https://github.com/bazelbuild/rules_apple/releases/download/3.9.0/rules_apple.3.9.0.tar.gz",
         ],
-        sha256 = "62847b3f444ce514ae386704a119ad7b29fa6dfb65a38bff4ae239f2389a0429",
+        sha256 = "f8fa96115c33e128cb72e9b7118a5f9294731a7dda8e36d04ddb582671f48dc1",
     )
 
     # Load Abseil
@@ -135,10 +135,10 @@ def gl_cpp_workspace0(name = None):
         http_archive,
         name = "com_google_protobuf",
         urls = [
-            "https://github.com/protocolbuffers/protobuf/archive/v28.1.tar.gz",
+            "https://github.com/protocolbuffers/protobuf/archive/v28.2.tar.gz",
         ],
-        sha256 = "3b8bf6e96499a744bd014c60b58f797715a758093abf859f1d902194b8e1f8c9",
-        strip_prefix = "protobuf-28.1",
+        sha256 = "b2340aa47faf7ef10a0328190319d3f3bee1b24f426d4ce8f4253b6f27ce16db",
+        strip_prefix = "protobuf-28.2",
     )
 
     # Load BoringSSL. This could be automatically loaded by gRPC. But as of
